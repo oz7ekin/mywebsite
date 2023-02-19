@@ -7,6 +7,33 @@
 	align-items: center;
 	margin-top: 10px;
 }
+.language-switcher {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+  }
+  
+/* Style for language switcher button */
+.lang-switcher {
+	display: inline-block;
+	background-color: #BEBEBE;
+	color: #484848;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	margin-right: 10px;
+  }
+  
+  /* Hover effect for language switcher button */
+  .lang-switcher:hover {
+	background-color: #333;
+	color: #686868;
+  }
+  
+  
 
 .fa {
 	font-size: 24px;
@@ -29,7 +56,13 @@
   input[type="submit"].special:active {
 	transform: translateY(2px);
 	box-shadow: none;
+	
   }
+  .special {
+	font-size: 0.8em;
+	padding: 6px 15px;
+  }
+  
   
 
 

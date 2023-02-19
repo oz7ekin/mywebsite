@@ -6,6 +6,8 @@
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="stylesheet" href="styles/main.css" />
 				<script src = "scripts/main.js"></script>
+				<script src = "scripts/languages.js"></script>
+
 				<link rel="icon" type="images/png" href="images/s.jpg.png">
 
 				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -23,20 +25,28 @@
 								<a href="mailto:selimoztekin1998@gmail.com">
 									<i class="fas fa-envelope fa-2x"></i>
 								</a>
-							</div>
+		</div>
+
+		<div class="language-switcher">
+			<button id="en" class="en-button">EN</button>
+			<button id="fr" class="fr-button">FR</button>
+		  </div>
+		  
+
 
 				<!-- Header -->
-<section id="header">
-	<header class="major">
-	  <h1>Selim Oztekin</h1>
-	  <ul>
-		<li><a href="#about-modal" class="open-modal-about">About</a></li>
-		<li><a href="#experience-modal" class="open-modal-experience">Experience</a></li>
-		<li><a href="#projects-modal" class="open-modal-projects">Projects</a></li>
-		<li><a href="#footer">Contact</a></li>
-	  </ul>
-	</header>
-  </section>
+				<section id="header">
+					<header class="major">
+					  <h1 data-i18n="greeting">Selim Oztekin</h1>
+					  <ul>
+						<li><a href="#about-modal" class="open-modal-about" data-i18n="about">About</a></li>
+						<li><a href="#experience-modal" class="open-modal-experience" data-i18n="experience">Experience</a></li>
+						<li><a href="#projects-modal" class="open-modal-projects" data-i18n="projects">Projects</a></li>
+						<li><a href="#footer" data-i18n="contact">Contact</a></li>
+					  </ul>
+					</header>
+				  </section>
+				  
 
 
   <!-- About Modal -->
@@ -109,7 +119,7 @@
 					<section id="footer">
 						<div class="container">
 							<header class="major">
-								<h2>Get in touch</h2>
+								<h2 data-i18n="notice">Get in touch</h2>
 							</header>
 							<form method="post" action="mailto:selimoztekin1998@gmail.com">
 								<div class="row uniform">
@@ -118,7 +128,7 @@
 									<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									<div class="12u$">
 										<ul class="actions">
-											<a><input type="submit" value="Send Message" class="special" style="background-color: white; color: black;" /></a>
+											<button type="submit" data-i18n="send" class="special" style="background-color: white; color: black;">Send Message</button>
 										</ul>
 									</div>
 								</div>
